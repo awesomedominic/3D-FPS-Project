@@ -27,6 +27,17 @@ public class PlayerController : MonoBehaviour
         //Player jump setup
         float yVelocity = _moveInput.y;
 
+        //Player rotation
+        //_moveInput.x = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
+        //_moveInput.z = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
+
+        Vector3 forwardDirection = transform.forward * Input.GetAxis("Vertical");
+        Vector3 horizontalDirection = transform.right * Input.GetAxis("Horizontal");
+
+        _moveInput = (forwardDirection + horizontalDirection).normalized;
+        _moveInput *= moveSpeed;
+
+        //Apply Jumping
         _moveInput.y = yVelocity;
 
         _moveInput.y += Physics.gravity.y * gravityModifier * Time.deltaTime;
@@ -44,16 +55,6 @@ public class PlayerController : MonoBehaviour
         {
             _moveInput.y = jumpForce;
         }
-
-        //Player rotation
-        //_moveInput.x = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
-        //_moveInput.z = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
-
-        Vector3 forwardDirection = transform.forward * Input.GetAxis("Vertical");
-        Vector3 horizontalDirection = transform.right * Input.GetAxis("Horizontal");
-
-        _moveInput = (forwardDirection + horizontalDirection).normalized;
-        _moveInput *= moveSpeed;
 
         _characterController.Move(_moveInput * Time.deltaTime);
 
