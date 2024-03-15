@@ -9130,7 +9130,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d17f00b7dace3498083c4c49bb10b8c7, type: 3}
       propertyPath: m_TagString
-      value: Floating target
+      value: TargetFloating
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18497,6 +18497,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Standing Target
       objectReference: {fileID: 0}
+    - target: {fileID: 3708290132711705371, guid: d7afc77e3d09241b1ba3a1085440633b, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4052587202980237729, guid: d7afc77e3d09241b1ba3a1085440633b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.5
@@ -18541,6 +18545,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.25
       objectReference: {fileID: 0}
+    - target: {fileID: 5594087795437212099, guid: d7afc77e3d09241b1ba3a1085440633b, type: 3}
+      propertyPath: m_TagString
+      value: TargetStanding
+      objectReference: {fileID: 0}
     - target: {fileID: 7409829697795193289, guid: d7afc77e3d09241b1ba3a1085440633b, type: 3}
       propertyPath: m_Size.y
       value: 0.4555441
@@ -18548,6 +18556,10 @@ PrefabInstance:
     - target: {fileID: 7409829697795193289, guid: d7afc77e3d09241b1ba3a1085440633b, type: 3}
       propertyPath: m_Center.y
       value: 0.8359775
+      objectReference: {fileID: 0}
+    - target: {fileID: 7409829697795193289, guid: d7afc77e3d09241b1ba3a1085440633b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
