@@ -10,7 +10,7 @@ public class Doors : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        _pivotPoint = transform.position;
     }
 
     // Update is called once per frame
