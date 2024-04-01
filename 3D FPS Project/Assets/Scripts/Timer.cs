@@ -44,7 +44,7 @@ public class Timer : MonoBehaviour
     public void StartGameTimer()
     {
         timerIsRunning = true;
-        timeRemaining = 90;
+        timeRemaining = 180;
     }
 
 }
