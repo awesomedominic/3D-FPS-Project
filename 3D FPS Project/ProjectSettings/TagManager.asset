@@ -8,6 +8,7 @@ TagManager:
   - Door
   - TargetStanding
   - TargetFloating
+  - AmmoBox
   layers:
   - Default
   - TransparentFX
