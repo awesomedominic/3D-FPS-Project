@@ -19,6 +19,18 @@ public class GameManager : MonoBehaviour
 
     }
 
+    public void UpdateTargetAmount()
+    {
+        _targetAmount -= 1;
+        targetText.text = "Targets: " + _targetAmount.ToString();
+
+        if(_targetAmount <= 0)
+        {
+            //stop the game
+            GameObject.Find("Game Manager").GetComponent<Timer>().EndGameTimer();
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {

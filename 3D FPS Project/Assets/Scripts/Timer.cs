@@ -47,4 +47,9 @@ public class Timer : MonoBehaviour
         timeRemaining = 180;
     }
 
+    public void EndGameTimer()
+    {
+        timerIsRunning = false;
+    }
+
 }

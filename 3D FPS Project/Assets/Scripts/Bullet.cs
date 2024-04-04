@@ -32,16 +32,22 @@ public class Bullet : MonoBehaviour
         if(other.gameObject.CompareTag("TargetStanding"))
         {
             Debug.Log("I hit the standing target.");
+            //add code to add hit points to your scoreboard
+            GameObject.Find("Game Manager").GetComponent<GameManager>().UpdateTargetAmount();
             //gray out the standing target
-            Destroy(other.gameObject);
+            Destroy(this.gameObject);
             other.gameObject.SetActive(false);
         }
 
         if(other.gameObject.CompareTag("TargetFloating"))
         {
             Debug.Log("I hit the floating target.");
+            //add code to add hit points to your scoreboard
+            GameObject.Find("Game Manager").GetComponent<GameManager>().UpdateTargetAmount();
+            //gray out the standing target
             Destroy(this.gameObject);
             Destroy(other.gameObject);
+            other.gameObject.SetActive(false);
         }
     }
 }
