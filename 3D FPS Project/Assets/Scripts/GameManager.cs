@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Locked;
         int floatingTarget = GameObject.FindGameObjectsWithTag("TargetFloating").Length;
         int standingTarget = GameObject.FindGameObjectsWithTag("TargetStanding").Length;
         _targetAmount = floatingTarget + standingTarget;
