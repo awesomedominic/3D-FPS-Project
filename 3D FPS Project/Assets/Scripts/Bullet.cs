@@ -39,6 +39,8 @@ public class Bullet : MonoBehaviour
             other.gameObject.SetActive(false);
         }
 
+        Destroy(this.gameObject);
+
         if(other.gameObject.CompareTag("TargetFloating"))
         {
             Debug.Log("I hit the floating target.");
