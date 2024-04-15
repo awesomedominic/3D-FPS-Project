@@ -57,8 +57,8 @@ public class SceneFader : MonoBehaviour
     public void FadeOutUI()
     {
         //sceneCover.alpha = 1;
-        _fadeOut = true;
-        GameObject.Find("UI Object").GetComponent<Timer>().StartGameTimer();
-        Cursor.lockState = CursorLockMode.Locked;
+        //_fadeOut = true;
+        //GameObject.Find("UI Object").GetComponent<Timer>().StartGameTimer();
+        //Cursor.lockState = CursorLockMode.Locked;
     }
 }
