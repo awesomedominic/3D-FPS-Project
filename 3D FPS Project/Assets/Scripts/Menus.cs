@@ -7,6 +7,12 @@ public class Menus : MonoBehaviour
 {
     public int levelOne;
 
+     // Start is called before the first frame update
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.None;
+    }
+
     public void OnPlayButtonPressed()
     {
         SceneManager.LoadScene(levelOne);
@@ -15,12 +21,6 @@ public class Menus : MonoBehaviour
     public void OnQuitButtonPressed()
     {
         Application.Quit();
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
     }
 
     // Update is called once per frame
